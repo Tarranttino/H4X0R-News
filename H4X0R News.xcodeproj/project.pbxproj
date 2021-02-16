@@ -11,6 +11,10 @@
 		FA8D06A625DC50CB00A028F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D06A525DC50CB00A028F7 /* ContentView.swift */; };
 		FA8D06A825DC50CC00A028F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8D06A725DC50CC00A028F7 /* Assets.xcassets */; };
 		FA8D06AB25DC50CC00A028F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8D06AA25DC50CC00A028F7 /* Preview Assets.xcassets */; };
+		FA8D06B725DC514900A028F7 /* DeteilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D06B625DC514900A028F7 /* DeteilView.swift */; };
+		FA8D06BA25DC518C00A028F7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D06B925DC518C00A028F7 /* WebView.swift */; };
+		FA8D06BE25DC51C900A028F7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D06BD25DC51C900A028F7 /* NetworkManager.swift */; };
+		FA8D06C125DC51DF00A028F7 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D06C025DC51DF00A028F7 /* PostData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,11 @@
 		FA8D06A725DC50CC00A028F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA8D06AA25DC50CC00A028F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA8D06AC25DC50CC00A028F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA8D06B625DC514900A028F7 /* DeteilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeteilView.swift; sourceTree = "<group>"; };
+		FA8D06B925DC518C00A028F7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		FA8D06BD25DC51C900A028F7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FA8D06C025DC51DF00A028F7 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		FA8D06C725DC536100A028F7 /* H4X0R News.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "H4X0R News.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +61,10 @@
 		FA8D06A225DC50CB00A028F7 /* H4X0R News */ = {
 			isa = PBXGroup;
 			children = (
+				FA8D06C725DC536100A028F7 /* H4X0R News.entitlements */,
 				FA8D06A325DC50CB00A028F7 /* H4X0R_NewsApp.swift */,
-				FA8D06A525DC50CB00A028F7 /* ContentView.swift */,
+				FA8D06B325DC510500A028F7 /* Views */,
+				FA8D06BC25DC51AD00A028F7 /* Models */,
 				FA8D06A725DC50CC00A028F7 /* Assets.xcassets */,
 				FA8D06AC25DC50CC00A028F7 /* Info.plist */,
 				FA8D06A925DC50CC00A028F7 /* Preview Content */,
@@ -67,6 +78,25 @@
 				FA8D06AA25DC50CC00A028F7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA8D06B325DC510500A028F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D06A525DC50CB00A028F7 /* ContentView.swift */,
+				FA8D06B625DC514900A028F7 /* DeteilView.swift */,
+				FA8D06B925DC518C00A028F7 /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA8D06BC25DC51AD00A028F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D06BD25DC51C900A028F7 /* NetworkManager.swift */,
+				FA8D06C025DC51DF00A028F7 /* PostData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +169,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA8D06A625DC50CB00A028F7 /* ContentView.swift in Sources */,
+				FA8D06C125DC51DF00A028F7 /* PostData.swift in Sources */,
+				FA8D06BA25DC518C00A028F7 /* WebView.swift in Sources */,
+				FA8D06BE25DC51C900A028F7 /* NetworkManager.swift in Sources */,
 				FA8D06A425DC50CB00A028F7 /* H4X0R_NewsApp.swift in Sources */,
+				FA8D06B725DC514900A028F7 /* DeteilView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
